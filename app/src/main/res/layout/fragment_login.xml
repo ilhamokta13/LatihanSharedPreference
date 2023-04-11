@@ -13,6 +13,7 @@
         android:background="@color/teal_700">
 
         <TextView
+            android:textColor="@color/white"
             android:id="@+id/vLoginscreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
+            android:textColorHint="@color/white"
             android:hint="username"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -45,6 +47,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
+            android:textColorHint="@color/white"
             android:hint="password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
@@ -54,7 +57,7 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@id/btn_reg"
+            android:layout_above="@id/text_reg"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:text="login"
@@ -62,13 +65,14 @@
             />
 
         <TextView
-            android:id="@+id/btn_reg"
+            android:textColor="@color/white"
+            android:id="@+id/text_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal"
-            android:text="Belum punya akun?" />
+            android:text="Belum punya akun?   klik di sini " />
 
     </RelativeLayout>
 </layout>
