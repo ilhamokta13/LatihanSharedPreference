@@ -8,6 +8,8 @@
 
     <TextView
         android:id="@+id/tvHello"
+        android:fontFamily="@font/maison_light"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello,"
@@ -18,6 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/gojek_green"
+        android:fontFamily="@font/maison_bold"
         android:text="logout" />
 
 </RelativeLayout>

@@ -9,17 +9,27 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
         tools:context=".RegisterFragment">
+
+        <ImageView
+            android:id="@+id/gojekIcReg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gojek"/>
 
         <TextView
             android:id="@+id/vRegistscreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/gojekIcReg"
             android:gravity="center_horizontal"
-            android:text="register"
+            android:layout_marginTop="50dp"
+            android:text="Register"
             android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/maison_bold"/>
 
 
         <EditText
@@ -27,9 +37,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/vRegistscreen"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:hint="name"
             android:importantForAutofill="no"
             android:inputType="text"
+            android:fontFamily="@font/maison_light"
             android:minHeight="48dp" />
 
         <EditText
@@ -37,9 +52,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/regname"
-            android:hint="Username"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="username"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
+            android:fontFamily="@font/maison_light"
             android:minHeight="48dp" />
 
         <EditText
@@ -47,6 +66,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/regUsername"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/maison_light"
             android:hint="password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
@@ -55,10 +78,15 @@
 
         <Button
             android:id="@+id/btn_register"
-            android:layout_width="match_parent"
+            android:fontFamily="@font/maison_bold"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/teal_700"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/regPassword"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/gojek_green"
             android:text="register" />
 
 
