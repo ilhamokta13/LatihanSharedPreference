@@ -19,19 +19,18 @@
             android:gravity="center_horizontal"
             android:text="register"
             android:textSize="34sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
 
         <EditText
             android:id="@+id/regname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="name"
             android:layout_below="@+id/vRegistscreen"
+            android:hint="name"
             android:importantForAutofill="no"
             android:inputType="text"
-            android:minHeight="48dp"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/regUsername"

@@ -9,19 +9,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".LoginFragment"
-        android:background="@color/teal_700">
+        android:background="@color/teal_700"
+        tools:context=".LoginFragment">
 
         <TextView
-            android:textColor="@color/white"
             android:id="@+id/vLoginscreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:gravity="center_horizontal"
             android:text="login"
+            android:textColor="@color/white"
             android:textSize="34sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
         <EditText
@@ -33,11 +33,11 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:textColorHint="@color/white"
             android:hint="username"
             android:importantForAutofill="no"
             android:inputType="text"
-            android:minHeight="48dp"/>
+            android:minHeight="48dp"
+            android:textColorHint="@color/white" />
 
         <EditText
             android:id="@+id/logPassword"
@@ -47,32 +47,31 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:textColorHint="@color/white"
             android:hint="password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColorHint="@color/white" />
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/text_reg"
-            android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
-            android:text="login"
+            android:layout_marginEnd="20dp"
             android:backgroundTint="@color/teal_700"
-            />
+            android:text="login" />
 
         <TextView
-            android:textColor="@color/white"
             android:id="@+id/text_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal"
-            android:text="Belum punya akun?   klik di sini " />
+            android:text="Belum punya akun?   klik di sini "
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 </layout>
