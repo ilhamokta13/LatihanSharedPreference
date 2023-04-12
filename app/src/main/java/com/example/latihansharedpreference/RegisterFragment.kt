@@ -39,10 +39,9 @@ class RegisterFragment : Fragment() {
             regist.putString("nama", name)
             regist.putString("username", username)
             regist.putString("password", password)
-
+            regist.apply()
             Toast.makeText(context,"Registrasi Anda Sukses", Toast.LENGTH_LONG).show()
-
-            Navigation.findNavController(view).navigate(R.id.action_registerFragment_to_loginFragment)
+            Navigation.findNavController(view).navigate(R.id.action_registerFragment2_to_loginFragment5)
 
         }
 

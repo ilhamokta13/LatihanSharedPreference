@@ -26,15 +26,13 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         dataPref= requireContext().getSharedPreferences("dataregistrasi", Context.MODE_PRIVATE)
-        binding.tvHello.text = "Hello,  " + dataPref.getString("name", "null")
+        binding.tvHello.text = "Hello,  " + dataPref.getString("nama", "name")
 
         binding.btnLogout.setOnClickListener {
             val dataPref = dataPref.edit()
             dataPref.clear()
             dataPref.apply()
-            Navigation.findNavController(requireView()).navigate(R.id.action_homeFragment2_to_loginFragment)
-
+            Navigation.findNavController(requireView()).navigate(R.id.action_homeFragment_to_loginFragment5)
         }
-
     }
 }

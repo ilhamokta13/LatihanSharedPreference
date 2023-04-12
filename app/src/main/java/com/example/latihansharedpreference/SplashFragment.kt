@@ -28,9 +28,9 @@ class SplashFragment : Fragment() {
             sharedSplash =
                 requireContext().getSharedPreferences("dataregistrasi", Context.MODE_PRIVATE)
             if (sharedSplash.getString("nama", "").equals("")) {
-                findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
+                findNavController().navigate(R.id.action_splashFragment_to_loginFragment5)
             } else if (sharedSplash.getString("nama", "")!!.isNotEmpty()) {
-                findNavController().navigate(R.id.action_splashFragment_to_homeFragment2)
+                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
             }
         }, 3000)
         return binding.root
